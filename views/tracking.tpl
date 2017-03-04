@@ -35,19 +35,19 @@
 
  <div class="navigation">
     <div class="navigation_tracking">
-            <img src="/static/img/tracking/tracking.png">
+        <a href="/app/tracking"><img src="/static/img/tracking/tracking.png"></a>
     </div>
     
     <div class="navigation_prescriptions">
-            <img src="/static/img/tracking/prescriptions.png">
+        <a href="/app/prescription"><img src="/static/img/tracking/prescriptions.png"></a>
     </div>
     
     <div class="navigation_insights">
-            <img src="/static/img/tracking/insights.png">
+        <img src="/static/img/tracking/insights.png">
     </div>
     
     <div class="navigation_settings">
-            <img src="/static/img/tracking/settings.png">
+        <img src="/static/img/tracking/settings.png">
     </div>
 </div>
 </body>

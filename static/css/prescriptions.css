@@ -1,0 +1,191 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background: ##f9f9f9;
+}
+
+.header{
+    background:#f9f9f9;
+    box-shadow:inset 0 -1px 0 0 #afafaf;
+    width:750px;
+    height:129px;
+}
+
+.header_backpresc{
+    font-family:SFUIText-Regular;
+    font-size:34px;
+    color:#ea4862;
+    letter-spacing:-0.78px;
+    line-height:44px;
+    position: absolute;
+    left: 55px;
+    top: 62px;
+}
+
+.header_arrow{
+    position: absolute;
+    left: 18px;
+    top: 63px;
+}
+
+.scan_bg{
+    background:#f66c3f;
+    width:256px;
+    height:70px;
+    position: absolute;
+    top: 187px;
+    left: 247px;
+}
+
+.scan_text{
+    font-family:SFUIText-Semibold;
+    font-size:36px;
+    color:#ffffff;
+    letter-spacing:-0.26px;
+    position: absolute;
+    left: 47px;
+    top: 11px;
+}
+
+.prescription_data {
+    font-family:SFUIText-Regular;
+    font-size:26px;
+    color:#555555;
+    letter-spacing:-0.26px;
+    line-height:38px;
+    position: absolute;
+    left: 32px;
+    top: 364px;
+}
+
+.form_medicine{
+    font-family:SFUIText-Regular;
+    font-size:26px;
+    color:#3ea1ee;
+    letter-spacing:-0.26px;
+    line-height:38px;
+    background:#ffffff;
+    box-shadow:inset 0 1px 0 1px #c8c7cc;
+    width:751px;
+    height:154px;
+    position: absolute;
+    top:412px;
+}
+
+.form_medicine_text{
+    position: absolute;
+    top: 38px;
+    left: 31px;
+}
+
+
+
+.form_dose{
+    font-family:SFUIText-Regular;
+    font-size:26px;
+    color:#3ea1ee;
+    letter-spacing:-0.26px;
+    line-height:38px;
+    background:#ffffff;
+    box-shadow:inset 0 1px 0 1px #c8c7cc;
+    width:751px;
+    height:154px;
+    position: absolute;
+    top: 565px;
+}
+
+.form_dose_text{
+    position: absolute;
+    top: 38px;
+    left: 31px;
+}
+
+.form_cooldown{
+    font-family:SFUIText-Regular;
+    font-size:26px;
+    color:#3ea1ee;
+    letter-spacing:-0.26px;
+    line-height:38px;
+    background:#ffffff;
+    box-shadow:inset 0 1px 0 1px #c8c7cc;
+    width:751px;
+    height:154px;
+    position: absolute;
+    top: 718px;
+}
+
+.form_cooldown_text{
+    position: absolute;
+    top: 38px;
+    left: 31px;
+}
+
+.signaturit{
+    position: absolute;
+    top: 1173px;
+    left: 605px;
+}
+
+.sign_bg{
+    background:#f66c3f;
+    width:178px;
+    height:79px;
+    position: absolute;
+    top: 1065px;
+    left: 288px;
+}
+
+.sign_text{
+    font-family:SFUIText-Semibold;
+    font-size:36px;
+    color:#ffffff;
+    letter-spacing:-0.26px;
+    position: absolute;
+    left: 44px;
+    top: 19px;
+}
+
+
+.navigation {
+    width:752px;
+    height:99px;
+    background:#f9f9f9;
+    box-shadow:inset 0 0 0 0 #afafaf;
+    position: absolute;
+    top: 1235px;
+}
+
+.navigation_tracking{
+    width:188px;
+    height:99px;
+    position: absolute;
+    top: 18px;
+    left: 53px;
+}
+
+.navigation_prescriptions{
+    width:188px;
+    height:83px;
+    position: absolute;
+    top: 16px;
+    left:218px;
+}
+
+.navigation_insights{
+    width:188px;
+    height:83px;
+    position: absolute;
+    top: 16px;
+    left:431px;
+
+}
+
+.navigation_settings{
+    width:137px;
+    height:83px;
+    position: absolute;
+    top: 16px;
+    left: 616px;
+}
+
