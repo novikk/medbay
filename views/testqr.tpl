@@ -144,6 +144,7 @@ function initCanvas(ww,hh)
     </div>
 <button onclick="captureToCanvas()">Capture</button><br>
 <canvas id="qr-canvas" width="640" height="480"></canvas>
+<input type="file" onchange="handleFiles(this.files)"/>
 </body>
 
 </html>
