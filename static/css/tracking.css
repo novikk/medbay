@@ -108,9 +108,8 @@ body, html {
 }
 
 .navigation_prescriptions{
-
     width:188px;
-    height:99px;
+    height:83px;
     position: absolute;
     top: 16px;
     left:218px;
@@ -118,7 +117,7 @@ body, html {
 
 .navigation_insights{
     width:188px;
-    height:99px;
+    height:83px;
     position: absolute;
     top: 16px;
     left:431px;
@@ -126,12 +125,11 @@ body, html {
 }
 
 .navigation_settings{
-    width:188px;
-    height:99px;
+    width:137px;
+    height:83px;
     position: absolute;
     top: 16px;
     left: 616px;
-
 }
 
 .prescriptions {

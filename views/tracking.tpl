@@ -2,7 +2,7 @@
 <head>
     <title>Index</title>
     <link rel="stylesheet" href="/static/css/tracking.css">
-    <meta name="viewport" content="width=750px, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 </head>
 <body>
     <div class="header">
@@ -37,16 +37,18 @@
     <div class="navigation_tracking">
             <img src="/static/img/tracking/tracking.png">
     </div>
+    
     <div class="navigation_prescriptions">
             <img src="/static/img/tracking/prescriptions.png">
     </div>
+    
     <div class="navigation_insights">
             <img src="/static/img/tracking/insights.png">
     </div>
+    
     <div class="navigation_settings">
             <img src="/static/img/tracking/settings.png">
     </div>
-
-    </div>
+</div>
 </body>
 </html>
