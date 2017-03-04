@@ -1,6 +1,8 @@
 package controllers
 
 import (
+	"time"
+
 	"github.com/astaxie/beego"
 )
 
@@ -10,7 +12,12 @@ type EventsController struct {
 
 var lastEvent string
 
+type EventAddResponse struct {
+	Status string `json:"status"`
+}
+
 func (c *EventsController) Add() {
+	defer c.ServeJSON()
 	lastEvent = c.GetString("event")
 
 	alreadyAdded := false
@@ -25,12 +32,22 @@ func (c *EventsController) Add() {
 	if !alreadyAdded {
 		addedMedicines = append(addedMedicines, Medicine{
 			Type:       lastEvent,
-			NumDoses:   []int{0},
+			NumDoses:   []int{1},
 			Prescribed: false,
+			Cooldown:   8,
+			LastTake:   time.Now(),
 		})
 	} else {
+		if time.Now().Sub(addedMedicines[foundMed].LastTake).Hours() < float64(addedMedicines[foundMed].Cooldown) {
+			c.Data["json"] = EventAddResponse{"error_cooldown"}
+			return
+		}
+
+		addedMedicines[foundMed].LastTake = time.Now()
 		addedMedicines[foundMed].NumDoses = append(addedMedicines[foundMed].NumDoses, 0)
 	}
+
+	c.Data["json"] = EventAddResponse{"ok"}
 }
 
 func (c *EventsController) Pending() {

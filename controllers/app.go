@@ -1,6 +1,8 @@
 package controllers
 
 import (
+	"time"
+
 	"github.com/astaxie/beego"
 )
 
@@ -13,16 +15,21 @@ type Medicine struct {
 	Dose       int
 	NumDoses   []int
 	Prescribed bool
+	Cooldown   int
+	LastTake   time.Time
 }
 
 var addedMedicines []Medicine
 
 func init() {
+	// example med
 	addedMedicines = append(addedMedicines, Medicine{
 		Type:       "Amoxicillin",
 		Dose:       500,
-		NumDoses:   []int{12, 24},
+		NumDoses:   []int{0, 0, 0},
 		Prescribed: true,
+		Cooldown:   8,
+		LastTake:   time.Now().Add(-60 * 60 * 24 * time.Hour),
 	})
 }
 
