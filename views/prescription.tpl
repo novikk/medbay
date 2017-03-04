@@ -2,7 +2,7 @@
 <head>
     <title>Prescriptions</title>
     <link rel="stylesheet" href="/static/css/prescriptions.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=750" />
 </head>
 <body>
     <div class="header">
