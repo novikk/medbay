@@ -25,11 +25,11 @@ func (c *EventsController) Add() {
 	if !alreadyAdded {
 		addedMedicines = append(addedMedicines, Medicine{
 			Type:       lastEvent,
-			NumDoses:   1,
+			NumDoses:   []int{0},
 			Prescribed: false,
 		})
 	} else {
-		addedMedicines[foundMed].NumDoses++
+		addedMedicines[foundMed].NumDoses = append(addedMedicines[foundMed].NumDoses, 0)
 	}
 }
 
