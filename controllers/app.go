@@ -11,7 +11,7 @@ type AppController struct {
 type Medicine struct {
 	Type       string
 	Dose       int
-	NumDoses   int
+	NumDoses   []int
 	Prescribed bool
 }
 
@@ -21,7 +21,7 @@ func init() {
 	addedMedicines = append(addedMedicines, Medicine{
 		Type:       "Amoxicillin",
 		Dose:       500,
-		NumDoses:   2,
+		NumDoses:   []int{12, 24},
 		Prescribed: true,
 	})
 }
