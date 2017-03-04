@@ -1,0 +1,187 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.header {
+    background:#f9f9f9;
+    box-shadow:inset 0 -1px 0 0 #afafaf;
+    width:750px;
+    height:129px;
+}
+
+.header_title {
+    font-family:SFUIText-Semibold;
+    font-size:34px;
+    color:#000000;
+    letter-spacing:-0.8px;
+    line-height:44px;
+    text-align:left;
+    position: absolute;
+    left: 306px;
+    top: 65px;
+}
+
+.header_today {
+    font-family:SFUIText-Regular;
+    font-size:34px;
+    color:#ea4862;
+    letter-spacing:-0.78px;
+    line-height:44px;
+     position: absolute;
+    left: 641px;
+    top: 62px;
+}
+
+.name {
+    background:#ffffff;
+    border:1px solid #efeff4;
+    width:749px;
+    height:141px;
+    position:absolute;
+    top: 129px;
+}
+
+.name_icon {
+    background:#fff;
+    width:80px;
+    height:80px;
+    position: absolute;
+    top: 31px;
+    left: 34px;
+}
+
+.name_text {
+    font-family:SFUIText-Semibold;
+    font-size:48px;
+    color:#000000;
+    letter-spacing:-0.8px;
+    line-height:44px;
+    text-align:left;
+    position: absolute;
+    top: 48px;
+    left: 138px;
+}
+.week {
+    border:1px solid #efeff4;
+    box-shadow:inset 0 -2px 0 0 #efeff4;
+    width:749px;
+    height:121px;
+    position: absolute;
+    top: 271px;
+}
+
+.week_monday {
+    font-family:SFUIText-Regular;
+    font-size:24px;
+    color:#000000;
+    letter-spacing:-0.01px;
+    line-height:32px;
+    position: absolute;
+    top: 11px;
+    left: 52px;
+}
+
+.daily {
+    border:1px solid #efeff4;
+    box-shadow:inset 0 -2px 0 0 #efeff4;
+    width:749px;
+    height:267px;
+    position: absolute;
+    top: 393px;
+}
+
+.navigation {
+    width:752px;
+    height:99px;
+    background:#f9f9f9;
+    box-shadow:inset 0 1px 0 0 #afafaf;
+    position: absolute;
+    top: 1235px;
+}
+
+.navigation_tracking{
+    width:188px;
+    height:99px;
+    position: absolute;
+}
+
+.navigation_prescriptions{
+
+    width:188px;
+    height:99px;
+    position: absolute;
+    top: 16px;
+    left:218px;
+}
+
+.navigation_insights{
+    width:188px;
+    height:99px;
+    position: absolute;
+    top: 16px;
+    left:431px;
+
+}
+
+.navigation_settings{
+    width:188px;
+    height:99px;
+    position: absolute;
+    top: 16px;
+    left: 616px;
+
+}
+
+.prescriptions {
+    height: 576px;
+    width: 750px;
+    position: absolute;
+    top: 659px;
+    overflow: scroll;
+}
+
+.prescription {
+    height: 192px;
+    border-bottom: 1px solid #efeff4;
+    position: relative;
+}
+
+.presc_type {
+    font-family:SFUIText-Semibold;
+    font-size:34px;
+    color:#000000;
+    letter-spacing:-0.8px;
+    line-height:44px;
+    text-align:left;
+    position: absolute;
+    top: 39px;
+    left: 33px;
+}
+
+.presc_dose {
+    font-family:SFUIText-Regular;
+    font-size:28px;
+    color:#959595;
+    letter-spacing:0.52px;
+    line-height:38px;
+    margin-left: 10px;
+}
+
+.presc_circles {
+    position: absolute;
+    top: 90px;
+    left: 33px;
+}
+
+.presc_circle {
+    background-color: rgba(204, 0, 102, 0);
+    border: 4px solid #3EA1EE;
+    height: 64px;
+    width: 64px;
+    -moz-border-radius:50%;
+    -webkit-border-radius: 50%;
+    margin-right: 15px;
+    float: left;
+}
