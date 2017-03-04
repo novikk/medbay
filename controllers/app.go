@@ -17,6 +17,15 @@ type Medicine struct {
 
 var addedMedicines []Medicine
 
+func init() {
+	addedMedicines = append(addedMedicines, Medicine{
+		Type:       "Amoxicillin",
+		Dose:       500,
+		NumDoses:   2,
+		Prescribed: true,
+	})
+}
+
 func (c *AppController) Tracking() {
 	c.Data["medicines"] = addedMedicines
 
