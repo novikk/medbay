@@ -11,7 +11,6 @@ type EventsController struct {
 var lastEvent string
 
 func (c *EventsController) Add() {
-	lastEvent = ""
 	lastEvent = c.GetString("event")
 }
 
@@ -24,4 +23,5 @@ func (c *EventsController) Pending() {
 	}
 
 	c.Data["json"] = lastEvent
+	lastEvent = ""
 }
