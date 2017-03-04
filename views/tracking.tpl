@@ -2,7 +2,7 @@
 <head>
     <title>Index</title>
     <link rel="stylesheet" href="/static/css/tracking.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=750px, initial-scale=1, maximum-scale=1" />
 </head>
 <body>
     <div class="header">
