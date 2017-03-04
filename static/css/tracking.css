@@ -96,7 +96,7 @@ body, html {
     width:752px;
     height:99px;
     background:#f9f9f9;
-    box-shadow:inset 0 1px 0 0 #afafaf;
+    /*box-shadow:inset 0 1px 0 0 #afafaf;*/
     position: absolute;
     top: 1235px;
 }
