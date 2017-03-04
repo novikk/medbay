@@ -7,6 +7,6 @@ import (
 
 func init() {
 	beego.Router("/", &controllers.MainController{})
-	beego.Router("/api/events/add", &controllers.EventsController{})
-	beego.Router("/api/events/pending", &controllers.EventsController{})
+	beego.Router("/api/events/add", &controllers.EventsController{}, "get:Add")
+	beego.Router("/api/events/pending", &controllers.EventsController{}, "get:Pending")
 }
