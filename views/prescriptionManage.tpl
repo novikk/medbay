@@ -6,13 +6,13 @@
 </head>
 <body>
     <div class="header">
-    <div class="header_backpresc">Prescriptions</div>
+    <a href="/app/prescription"><div class="header_backpresc">Prescriptions</div>
     <div class="header_arrow">
         <img src="/static/img/tracking/arrow.png">
-    </div>
+    </div></a>
     <div class="scan_bg">
         <input type="file" style="width: 0.1px;height: 0.1px;opacity: 0;overflow: hidden;position: absolute;z-index: -1;" id="file" onchange="handleFiles(this.files)"/>
-        <label for="file" class="scan_text">SCAN QR</label>
+        <label for="file" class="scan_text">&nbsp;SCAN QR</label>
     </div>
     </div>
     <div class="prescription_data">PRESCRIPTION DATA</div>

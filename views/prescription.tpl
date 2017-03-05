@@ -8,18 +8,27 @@
     <div class="header">
         <div class="header_text">Prescriptions</div>
     <div class="add_bg">
-        <div class="add_text">ADD</div>
+        <a href="/app/prescription/manage"><div class="add_text">ADD</div></a>
     </div>
     </div>
 
     <div class="list_header">PRESCRIPTIONS</div>
-    <div class="list_container"></div>
+    <div class="list_container">
+        <div class="presc_list_item">
+            <div class="presc_doctor">
+                Dr. Test
+            </div>
+            <div class="presc_med">
+                Amoxilalalala
+            </div>
+        </div>
+    </div>
     <div class="navigation">
     <div class="navigation_tracking">
-            <img src="/static/img/tracking/tracking_inactive.png">
+            <a href="/app/tracking"><img src="/static/img/tracking/tracking_inactive.png"></a>
     </div>
     <div class="navigation_prescriptions">
-            <img src="/static/img/tracking/prescription_active.png">
+            <a href="/app/prescription"><img src="/static/img/tracking/prescription_active.png"></a>
     </div>
     <div class="navigation_insights">
             <img src="/static/img/tracking/insights.png">

@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100vw;
-    background: ##f9f9f9;
+    background: #f9f9f9;
 }
 
 .header{
@@ -188,4 +188,3 @@ body, html {
     top: 16px;
     left: 616px;
 }
-

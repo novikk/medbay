@@ -58,9 +58,10 @@ body, html {
     background-color: #ffffff;
     box-shadow:inset 0 -1px 0 0 #ceced2;
     width:751px;
-    height:924px;
+    height:980px;
     position: absolute;
     top:258px;
+    overflow: scroll;
 }
 
 
@@ -104,4 +105,30 @@ body, html {
     position: absolute;
     top: 16px;
     left: 616px;
+}
+
+.presc_list_item {
+    box-shadow:inset 0 -1px 0 0 #ceced2;
+    width:751px;
+    height:154px;
+}
+
+.presc_doctor {
+    font-family:SFUIText-Regular;
+    font-size:26px;
+    color:#3ea1ee;
+    letter-spacing:-0.26px;
+    line-height:38px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.presc_med {
+    font-family:SFUIText-Regular;
+    font-size:34px;
+    color:#000000;
+    letter-spacing:-0.8px;
+    line-height:44px;
+    text-align:left;
+    padding-left: 30px;
 }
