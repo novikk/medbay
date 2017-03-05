@@ -1,0 +1,143 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.header{
+    background:#f9f9f9;
+    box-shadow:inset 0 -1px 0 0 #afafaf;
+    width:750px;
+    height:129px;
+}
+
+.header_backpresc{
+    font-family:SFUIText-Regular;
+    font-size:34px;
+    color:#ea4862;
+    letter-spacing:-0.78px;
+    line-height:44px;
+    position: absolute;
+    left: 55px;
+    top: 62px;
+}
+
+.header_arrow{
+    position: absolute;
+    left: 18px;
+    top: 63px;
+}
+
+
+
+.scan_bg{
+    background:#f66c3f;
+    width:256px;
+    height:70px;
+    position: absolute;
+    top: 187px;
+    left: 247px;
+}
+
+.scan_text{
+    font-family:SFUIText-Semibold;
+    font-size:36px;
+    color:#ffffff;
+    letter-spacing:-0.26px;
+    position: absolute;
+    left: 47px;
+    top: 11px;
+}
+
+.amoxi_box{
+    background:#ffffff;
+    width:751px;
+    height:205px;
+    position: absolute;
+    left: 0px;
+    top: 130px;
+}
+
+.dose{
+    font-family:SFUIText-Regular;
+    font-size:28px;
+    color:#cccccc;
+    letter-spacing:-0.28px;
+    line-height:38px;
+    position: absolute;
+    left:73px;
+    top:44px;
+}
+
+.checklist{
+    background:#f9f9f9;
+    box-shadow:inset 0 -1px 0 0 #afafaf;
+    width:750px;
+    height:129px;
+    position:absolute;
+    left:0px;
+    top:397px
+}
+
+.progress{
+    background:#f9f9f9;
+    box-shadow:inset 0 -1px 0 0 #afafaf;
+    width:750px;
+    height:129px;
+    position:absolute;
+    left:0px;
+    top:730px;
+}
+
+.drug_type {
+    font-family:SFUIText-Semibold;
+    font-size:48px;
+    color:#000000;
+    letter-spacing:-0.8px;
+    line-height:44px;
+    text-align:left;
+    position: absolute;
+    left: 267px;
+    top: 77px;
+}
+
+.navigation {
+    width:752px;
+    height:99px;
+    background:#f9f9f9;
+    box-shadow:inset 0 0 0 0 #afafaf;
+    position: absolute;
+    top: 1235px;
+}
+
+.navigation_tracking{
+    width:188px;
+    height:99px;
+    position: absolute;
+}
+
+.navigation_prescriptions{
+    width:188px;
+    height:83px;
+    position: absolute;
+    top: 16px;
+    left:218px;
+}
+
+.navigation_insights{
+    width:188px;
+    height:83px;
+    position: absolute;
+    top: 16px;
+    left:431px;
+
+}
+
+.navigation_settings{
+    width:137px;
+    height:83px;
+    position: absolute;
+    top: 16px;
+    left: 616px;
+}
+
