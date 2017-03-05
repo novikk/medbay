@@ -22,18 +22,20 @@
 
 <div class="prescriptions">
     {{ range .medicines }}
-    <div class="prescription">
-        <div class="presc_type">{{.Type}} <span class="presc_dose">{{.Dose}}mg</span></div>
-        <div class="presc_circles">
-            {{ range .NumDoses }}
-                {{ if eq . 1 }}
-                <div class="presc_circle_full"></div>
-                {{ else }}
-                <div class="presc_circle"></div>
+    <a href="/app/tracking/detail">
+        <div class="prescription">
+            <div class="presc_type">{{.Type}} <span class="presc_dose">{{.Dose}}mg</span></div>
+            <div class="presc_circles">
+                {{ range .NumDoses }}
+                    {{ if eq . 1 }}
+                    <div class="presc_circle_full"></div>
+                    {{ else }}
+                    <div class="presc_circle"></div>
+                    {{ end }}
                 {{ end }}
-            {{ end }}
+            </div>
         </div>
-    </div>
+    </a>
     {{ end }}
 </div>
 

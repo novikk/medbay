@@ -6,10 +6,12 @@
 </head>
 <body>
     <div class="header">
-        <div class="header_backpresc">Tracking</div>
-        <div class="header_arrow">
-            <img src="/static/img/tracking/header_arrow.png">
-        </div>
+        <a href="/app/tracking">
+            <div class="header_backpresc">Tracking</div>
+            <div class="header_arrow">
+                <img src="/static/img/tracking/header_arrow.png">
+            </div>
+        </a>
     </div>
     
     <div class="amoxi_box">
