@@ -26,7 +26,11 @@
         <div class="presc_type">{{.Type}} <span class="presc_dose">{{.Dose}}mg</span></div>
         <div class="presc_circles">
             {{ range .NumDoses }}
-            <div class="presc_circle"></div>
+                {{ if eq . 1 }}
+                <div class="presc_circle_full"></div>
+                {{ else }}
+                <div class="presc_circle"></div>
+                {{ end }}
             {{ end }}
         </div>
     </div>

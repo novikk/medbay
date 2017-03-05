@@ -18,7 +18,6 @@ type EventAddResponse struct {
 
 func (c *EventsController) Add() {
 	defer c.ServeJSON()
-	lastEvent = c.GetString("event")
 
 	alreadyAdded := false
 	foundMed := 0
@@ -36,6 +35,7 @@ func (c *EventsController) Add() {
 			Prescribed: false,
 			Cooldown:   8,
 			LastTake:   time.Now(),
+			Dose:       600,
 		})
 	} else {
 		if time.Now().Sub(addedMedicines[foundMed].LastTake).Hours() < float64(addedMedicines[foundMed].Cooldown) {
@@ -47,6 +47,7 @@ func (c *EventsController) Add() {
 		addedMedicines[foundMed].NumDoses = append(addedMedicines[foundMed].NumDoses, 0)
 	}
 
+	lastEvent = c.GetString("event")
 	c.Data["json"] = EventAddResponse{"ok"}
 }
 

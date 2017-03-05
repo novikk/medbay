@@ -183,3 +183,14 @@ body, html {
     margin-right: 15px;
     float: left;
 }
+
+.presc_circle_full {
+    background-color: #3EA1EE;
+    border: 4px solid #3EA1EE;
+    height: 64px;
+    width: 64px;
+    -moz-border-radius:50%;
+    -webkit-border-radius: 50%;
+    margin-right: 15px;
+    float: left;
+}
