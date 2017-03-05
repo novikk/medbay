@@ -20,12 +20,15 @@
 <div class="form">
     <div class="form_medicine">
         <div class="form_medicine_text">Medicine name</div>
+        <div class="form_med_fill">-</div>
     </div>
     <div class="form_dose">
         <div class="form_dose_text">Dose</div>
+        <div class="form_dose_fill">-</div>
     </div>
     <div class="form_cooldown">
         <div class="form_cooldown_text">Cooldown</div>
+        <div class="form_cd_fill">-</div>
     </div>
     <div class="sign_bg">
         <div class="sign_text">SIGN</div>
@@ -70,6 +73,7 @@
 <script type="text/javascript" src="/static/js/webqr/findpat.js"></script>
 <script type="text/javascript" src="/static/js/webqr/alignpat.js"></script>
 <script type="text/javascript" src="/static/js/webqr/databr.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 <script type="text/javascript">
 qrcode.callback = read;
@@ -93,7 +97,16 @@ function handleFiles(f)
 	
 function read(a)
 {
-	alert(a);
+    info = a.split("|")
+    if (info[0] != "medbay" || info.length != 4) {
+        alert("Invalid QR code")
+        return
+    }
+
+    $('.form_med_fill').html(info[1]);
+    $('.form_dose_fill').html(info[2]);
+    $('.form_cd_fill').html(info[3]);
+    alert("Prescription succesfully read");
 }	
 </script>
 </body>

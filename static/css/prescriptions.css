@@ -188,3 +188,15 @@ body, html {
     top: 16px;
     left: 616px;
 }
+
+.form_med_fill, .form_dose_fill, .form_cd_fill{
+    font-family:SFUIText-Regular;
+    font-size:34px;
+    color:#000000;
+    letter-spacing:-0.8px;
+    line-height:44px;
+    text-align:left;
+    top: 70px;
+    position: absolute;
+    left: 29px;
+}
