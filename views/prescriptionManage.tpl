@@ -30,14 +30,15 @@
         <div class="form_cooldown_text">Cooldown</div>
         <div class="form_cd_fill">-</div>
     </div>
-    <div class="sign_bg">
-        <form action="/app/prescription/add" method="POST">
-            <input type="hidden" name="med" id="med">
-            <input type="hidden" name="dose" id="dose">
-            <input type="hidden" name="cd" id="cd">
-            <button type="submit" class="sign_text">SIGN</div>
-        </form>
-    </div>
+    
+    <form action="/app/prescription/add" method="POST">
+        <input type="hidden" name="med" id="med">
+        <input type="hidden" name="dose" id="dose">
+        <input type="hidden" name="cd" id="cd">
+        <button class="sign_bg" type="submit" >
+            <div class="sign_text">SIGN</div>
+        </button>
+    </form>
     
     <div class="signaturit">
         <img src="/static/img/tracking/signaturit.png">

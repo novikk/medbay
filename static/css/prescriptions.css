@@ -134,6 +134,7 @@ body, html {
     position: absolute;
     top: 1065px;
     left: 288px;
+    border: 0;
 }
 
 .sign_text{
@@ -144,6 +145,8 @@ body, html {
     position: absolute;
     left: 44px;
     top: 19px;
+    background: rgba(0,0,0,0);
+    border: 0;
 }
 
 
