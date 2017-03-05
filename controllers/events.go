@@ -19,10 +19,11 @@ type EventAddResponse struct {
 func (c *EventsController) Add() {
 	defer c.ServeJSON()
 
+	ev := c.GetString("event")
 	alreadyAdded := false
 	foundMed := 0
 	for i, med := range addedMedicines {
-		if med.Type == lastEvent {
+		if med.Type == ev {
 			alreadyAdded = true
 			foundMed = i
 		}
@@ -30,7 +31,7 @@ func (c *EventsController) Add() {
 
 	if !alreadyAdded {
 		addedMedicines = append(addedMedicines, Medicine{
-			Type:       lastEvent,
+			Type:       ev,
 			NumDoses:   []int{1},
 			Prescribed: false,
 			Cooldown:   8,
@@ -44,10 +45,10 @@ func (c *EventsController) Add() {
 		}
 
 		addedMedicines[foundMed].LastTake = time.Now()
-		addedMedicines[foundMed].NumDoses = append(addedMedicines[foundMed].NumDoses, 0)
+		addedMedicines[foundMed].NumDoses = append(addedMedicines[foundMed].NumDoses, 1)
 	}
 
-	lastEvent = c.GetString("event")
+	lastEvent = ev
 	c.Data["json"] = EventAddResponse{"ok"}
 }
 
