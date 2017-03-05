@@ -15,5 +15,6 @@ func init() {
 	beego.Router("/app/tracking", &controllers.AppController{}, "get:Tracking")
 	beego.Router("/app/tracking/detail", &controllers.AppController{}, "get:TrackingDetail")
 	beego.Router("/app/prescription", &controllers.AppController{}, "get:Prescription")
+	beego.Router("/app/prescription/add", &controllers.AppController{}, "post:AddPrescription")
 	beego.Router("/app/prescription/manage", &controllers.AppController{}, "get:PrescriptionManage")
 }

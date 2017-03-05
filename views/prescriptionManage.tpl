@@ -31,7 +31,12 @@
         <div class="form_cd_fill">-</div>
     </div>
     <div class="sign_bg">
-        <div class="sign_text">SIGN</div>
+        <form action="/app/prescription/add" method="POST">
+            <input type="hidden" name="med" id="med">
+            <input type="hidden" name="dose" id="dose">
+            <input type="hidden" name="cd" id="cd">
+            <button type="submit" class="sign_text">SIGN</div>
+        </form>
     </div>
     
     <div class="signaturit">
@@ -106,6 +111,10 @@ function read(a)
     $('.form_med_fill').html(info[1]);
     $('.form_dose_fill').html(info[2]);
     $('.form_cd_fill').html(info[3]);
+
+    $('#med').val(info[1]);
+    $('#dose').val(info[2]);
+    $('#cd').val(info[3]);
     alert("Prescription succesfully read");
 }	
 </script>

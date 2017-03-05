@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=750" />
 </head>
 <body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
     <div class="header">
         <div class="header_text">Prescriptions</div>
     <div class="add_bg">
@@ -14,12 +16,38 @@
 
     <div class="list_header">PRESCRIPTIONS</div>
     <div class="list_container">
+        {{ range .prescriptions }}
         <div class="presc_list_item">
             <div class="presc_doctor">
-                Dr. Test
+                {{ .Doctor }}
             </div>
             <div class="presc_med">
-                Amoxilalalala
+                {{ .Medicine }}
+            </div>
+        </div>
+        {{ end }}
+        <div class="presc_list_item">
+            <div class="presc_doctor">
+                Dr. Smith
+            </div>
+            <div class="presc_med">
+                Ibuprofen
+            </div>
+        </div>
+        <div class="presc_list_item">
+            <div class="presc_doctor">
+                Dr. Smith
+            </div>
+            <div class="presc_med">
+                Amoxicillin
+            </div>
+        </div>
+        <div class="presc_list_item">
+            <div class="presc_doctor">
+                Dr. Dickinson
+            </div>
+            <div class="presc_med">
+                Nolotil
             </div>
         </div>
     </div>
@@ -38,6 +66,13 @@
     </div>
 
     </div>
-
+{{ if ne .signaturit "" }}
+<script type="text/javascript">$('body').append('<iframe src="{{.signaturit}}" style="position: absolute; top: 0; left: 0; height: 1400px; width: 750px; background: #fff" />')</script>
+<!--<script type="text/javascript">
+    $(window).on('message', function() {
+        $('iframe').remove();
+    })
+</script>-->
+{{ end }}
 </body>
 </html>
